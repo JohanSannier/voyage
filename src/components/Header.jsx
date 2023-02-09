@@ -17,10 +17,9 @@ const Header = () => {
     }
   }
 
-  const header = document.getElementById("header");
-
   useEffect(() => {
     window.onscroll = () => {
+      const header = document.getElementById("header");
       if (window.pageYOffset >= 100) {
         header.classList.add("scroll-header");
       } else {
