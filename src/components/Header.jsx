@@ -1,17 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 const Header = () => {
-  function handleClickMenu() {
-    const navMenu = document.getElementById("id-menu");
-    navMenu.classList.toggle("show-menu");
-  }
-
   const navLink = [
     { name: "Accueil", link: "home" },
     { name: "À propos", link: "about" },
     { name: "Découvrir", link: "discover" },
     { name: "Endroits", link: "place" },
   ];
+
+  function handleClickMenu(e) {
+    const navMenu = document.getElementById("id-menu");
+    if (e.target.classList.contains("ri-function-line")) {
+      navMenu.classList.toggle("show-menu");
+    } else {
+      navMenu.classList.remove("show-menu");
+    }
+  }
+
+  const header = document.getElementById("header");
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.pageYOffset >= 100) {
+        header.classList.add("scroll-header");
+      } else {
+        header.classList.remove("scroll-header");
+      }
+    };
+
+    return () => (window.onscroll = null);
+  });
 
   return (
     <header className="header" id="header">
@@ -23,7 +41,11 @@ const Header = () => {
         <div className="nav__menu" id="id-menu">
           <ul className="nav__list">
             {navLink.map((item) => (
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={handleClickMenu}
+                key={item.link}
+              >
                 <a href={`#${item.link}`} className="nav__link">
                   {item.name}
                 </a>
