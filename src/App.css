@@ -174,7 +174,8 @@ input {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  /* change capitalize */
   margin-bottom: var(--mb-2);
 }
 
