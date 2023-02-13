@@ -463,7 +463,7 @@ input {
 .discover__data {
   position: absolute;
   bottom: 1.5rem;
-  left: 1rem;
+  left: 0.5rem;
 }
 
 .discover__title,
@@ -487,6 +487,13 @@ input {
 
 .discover__img:hover {
   transform: var(--img-scale);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left,
@@ -998,13 +1005,14 @@ input {
     width: 290px;
   }
   .discover__card {
-    width: 237px;
+    width: 165px;
+    /* change 237px */
   }
   .discover__container {
     width: 700px;
   }
   .discover__data {
-    left: 1.5rem;
+    left: 0.2rem;
     bottom: 2rem;
   }
   .discover__title {
