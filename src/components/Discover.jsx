@@ -18,7 +18,7 @@ const Discover = () => {
       <div className="discover__container container">
         <div className="flex">
           {data.map((card) => (
-            <div className="discover__card ">
+            <div className="discover__card" key={card.title}>
               <img src={card.img} alt="" className="discover__img" />
               <div className="discover__data">
                 <h2 className="discover__title">{card.title}</h2>
