@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Video from "./components/Video";
 import Place from "./components/Place";
+import Subscribe from "./components/Subscribe";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Experience />
       <Video />
       <Place />
+      <Subscribe />
     </>
   );
 };
