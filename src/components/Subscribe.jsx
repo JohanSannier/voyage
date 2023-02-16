@@ -13,7 +13,6 @@ const Subscribe = () => {
             Souscrivez à notre Newsletter et recevez une réduction spéciale de
             15% sur votre voyage.
           </p>
-          for;
           <div className="subscribe__form">
             <input
               type="text"

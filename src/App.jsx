@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Video from "./components/Video";
 import Place from "./components/Place";
 import Subscribe from "./components/Subscribe";
+import Sponsor from "./components/Sponsor";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Video />
       <Place />
       <Subscribe />
+      <Sponsor />
     </>
   );
 };
