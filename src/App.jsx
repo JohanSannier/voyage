@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Video from "./components/Video";
+import Place from "./components/Place";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Discover />
       <Experience />
       <Video />
+      <Place />
     </>
   );
 };

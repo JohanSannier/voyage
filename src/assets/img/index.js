@@ -13,6 +13,7 @@ import place1 from "./place1.jpg";
 import place2 from "./place2.jpg";
 import place3 from "./place3.jpg";
 import place4 from "./place4.jpg";
+import place5 from "./place5.jpg";
 import sponsors1 from "./sponsors1.png";
 import sponsors2 from "./sponsors2.png";
 import sponsors3 from "./sponsors3.png";
@@ -35,6 +36,7 @@ export {
   place2,
   place3,
   place4,
+  place5,
   sponsors1,
   sponsors2,
   sponsors3,

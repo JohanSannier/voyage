@@ -5,7 +5,7 @@ const Header = () => {
     { name: "Accueil", link: "home" },
     { name: "À propos", link: "about" },
     { name: "Découvrir", link: "discover" },
-    { name: "Endroits", link: "place" },
+    { name: "Destinations", link: "place" },
   ];
 
   function handleClickMenu(e) {
