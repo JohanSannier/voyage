@@ -2,7 +2,7 @@ import React from "react";
 import { home1, home2 } from "../assets/img/index.js";
 
 const Hero = () => {
-  const socialLink = ["facebook", "instagram", "twitter"];
+  const socialLink = ["facebook", "instagram", "twitter", "youtube"];
   return (
     <section className="home" id="home">
       <img src={home1} alt="" className="home__img" />

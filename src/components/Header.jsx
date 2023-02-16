@@ -19,8 +19,9 @@ const Header = () => {
 
   useEffect(() => {
     window.onscroll = () => {
+      scrollActive();
       const header = document.getElementById("header");
-      if (window.pageYOffset >= 100) {
+      if (window.scrollY >= 100) {
         header.classList.add("scroll-header");
       } else {
         header.classList.remove("scroll-header");
@@ -29,6 +30,27 @@ const Header = () => {
 
     return () => (window.onscroll = null);
   });
+
+  function scrollActive() {
+    const scrollY = window.scrollY;
+    const sections = document.querySelectorAll("section[id]");
+
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 50;
+      const sectionId = current.id;
+
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document
+          .querySelector(`.nav__menu a[href*=${sectionId}]`)
+          .classList.add("active-link");
+      } else {
+        document
+          .querySelector(`.nav__menu a[href*=${sectionId}]`)
+          .classList.remove("active-link");
+      }
+    });
+  }
 
   return (
     <header className="header" id="header">

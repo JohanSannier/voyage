@@ -9,19 +9,25 @@ import Video from "./components/Video";
 import Place from "./components/Place";
 import Subscribe from "./components/Subscribe";
 import Sponsor from "./components/Sponsor";
+import Footer from "./components/Footer";
+import Scrollup from "./components/Scrollup";
 
 const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <Discover />
-      <Experience />
-      <Video />
-      <Place />
-      <Subscribe />
-      <Sponsor />
+      <main>
+        <Hero />
+        <About />
+        <Discover />
+        {/* <Experience /> */}
+        <Video />
+        <Place />
+        <Subscribe />
+        <Sponsor />
+      </main>
+      <Footer />
+      <Scrollup />
     </>
   );
 };

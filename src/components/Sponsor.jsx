@@ -12,8 +12,8 @@ const Sponsor = () => {
   return (
     <section className="sponsor section">
       <div className="sponsor__container container grid">
-        {data.map((sponsor) => (
-          <div className="sponsor__content">
+        {data.map((sponsor, index) => (
+          <div className="sponsor__content" key={`-${index}`}>
             <img src={sponsor} alt="" className="sponsor__img" />
           </div>
         ))}
